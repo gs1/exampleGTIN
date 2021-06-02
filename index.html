@@ -22,13 +22,32 @@
     }
 
     figure {
-      margin-left: 0;
+      margin: 1em .5em;
     }
 
     figure figcaption {
       overflow: auto;
       height: 2em;
+      padding: .5em;
     }
+
+    figure img {
+      display: block;
+      margin: 0 0;
+    }
+
+
+    @media (min-width: 600px) {
+
+      figure img {
+        margin: 0 auto;
+      }
+
+      figure {
+        margin: .2em 2em 0 0;
+        float:left;
+      }
+  }
 
 
   </style>
@@ -40,10 +59,10 @@
 
 <p>The GTIN may be encoded in a variety of <abbr title="radio frequency">RF</abbr> and optical data carriers. Some examples of the latter are provided below.</p>
 
-<figure id="ean"><img alt="1D barcode carrying the GTIN 09506000149301" src="ean.png"></figure>
 <figure id="qr"><img alt="QR code containing GS1 Digital Link URI for GTIN 09506000149301" src="dlQR.png"><figcaption>https://id.gs1.org/01/09506000149301</figcaption></figure>
 <figure id="dldm"><img alt="Data Matrix containing GS1 Digital Link URI for GTIN 09506000149301" src="dlDM.png"><figcaption>https://id.gs1.org/01/09506000149301</figcaption></figure>
 <figure id="dm"><img alt="GS1 Data Matrix for GTIN 09526202134363" src="gs1DM.png"><figcaption>(01)09506000149301</figcaption></figure>
+<figure id="ean"><img alt="1D barcode carrying the GTIN 09506000149301" src="ean.png"></figure>
 
 </main>
 
