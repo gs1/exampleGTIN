@@ -56,7 +56,7 @@
 <script>
   const re = RegExp('10=([^&$]+)');
   let batchArray = re.exec(location.search);
-  const batch = batchArray[1];
+  const batch = batchArray !== null ? batchArray[1] : '';
   let cooSpan = document.getElementById('cooSpan');
   // console.log(`We have a batch of ${batch}`);
   if (batch === 'ABC') {
